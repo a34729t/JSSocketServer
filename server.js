@@ -1,13 +1,8 @@
 var net = require('net'); // tcp-server
 var http = require("http"); // http-server
 var qs = require('querystring'); // http-post
-var argv = require('optimist').argv; // options parser
+//var argv = require('optimist').argv; // options parser
 // var winston = require('winston'); // logger  (or log.js)
-
-// Ask Chris
-// TODO: Recieve json properly as http:post
-// TODO: Figure out socket hash - can I do socket2id? or can I get the associated id on socket end?
-// TODO: Heartbeat
 
 // Map of sockets to devices
 var id2socket = new Object;
@@ -92,6 +87,7 @@ var server_http = http.createServer(
 				}
 			}
 			
+			// TODO: JSON reading is messed up
 			/*
 			response.writeHead(200, {"Content-Type": "text/plain"});
 			response.write("Thanks for sending a message");
