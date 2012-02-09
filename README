@@ -1,0 +1,11 @@
+
+
+GOALS
+-Reliable, persistent socket connections
+-Connections don't die randomly
+-Server detects closed connections (heartbeat?) and closes these sockets
+-Server can post/accept posts
+
+DESIGN
+
+Use socket.io and simple event handlers
