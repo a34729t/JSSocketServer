@@ -1,11 +1,11 @@
 
-
 GOALS
 -Reliable, persistent socket connections
 -Connections don't die randomly
 -Server detects closed connections (heartbeat?) and closes these sockets
 -Server can post/accept posts
 
-DESIGN
-
-Use socket.io and simple event handlers
+TODO:
+-Recieve json properly as http:post, right now I get undefined on the front always
+-Figure out socket hash - can I do socket2id? or can I get the associated id on socket end? Why does the socket object get overwritten?
+-Heartbeat (have an example, get it working)
